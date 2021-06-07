@@ -1,13 +1,13 @@
 PODS:
   - KVOController (1.2.0)
-  - Mantle (2.1.0):
-    - Mantle/extobjc (= 2.1.0)
-  - Mantle/extobjc (2.1.0)
+  - Mantle (2.1.6):
+    - Mantle/extobjc (= 2.1.6)
+  - Mantle/extobjc (2.1.6)
   - pop (1.0.12)
 
 DEPENDENCIES:
   - KVOController
-  - Mantle
+  - Mantle (= 2.1.6)
   - pop
 
 SPEC REPOS:
@@ -18,9 +18,9 @@ SPEC REPOS:
 
 SPEC CHECKSUMS:
   KVOController: d72ace34afea42468329623b3379ab3cd1d286b6
-  Mantle: 2fa750afa478cd625a94230fbf1c13462f29395b
+  Mantle: 4c0ed6ce47c96eccc4dc3bb071deb3def0e2c3be
   pop: d582054913807fd11fd50bfe6a539d91c7e1a55a
 
-PODFILE CHECKSUM: 8731ce61d15228ee004ec467b2a2051a2ae24aa5
+PODFILE CHECKSUM: f60ff57267484325cd624a7b4375f6c95bc2c824
 
-COCOAPODS: 1.8.4
+COCOAPODS: 1.10.1

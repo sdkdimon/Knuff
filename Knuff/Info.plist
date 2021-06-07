@@ -21,7 +21,7 @@
 			<string>Editor</string>
 			<key>LSItemContentTypes</key>
 			<array>
-				<string>com.madebybowtie.Knuff-OSX.document</string>
+				<string>org.sdkdimon.Knuff-OSX.document</string>
 			</array>
 			<key>NSDocumentClass</key>
 			<string>APNSDocument</string>
@@ -43,20 +43,6 @@
 	<string>????</string>
 	<key>CFBundleVersion</key>
 	<string>4</string>
-	<key>Fabric</key>
-	<dict>
-		<key>APIKey</key>
-		<string>0</string>
-		<key>Kits</key>
-		<array>
-			<dict>
-				<key>KitInfo</key>
-				<dict/>
-				<key>KitName</key>
-				<string>Crashlytics</string>
-			</dict>
-		</array>
-	</dict>
 	<key>LSApplicationCategoryType</key>
 	<string>public.app-category.developer-tools</string>
 	<key>LSMinimumSystemVersion</key>
@@ -67,10 +53,6 @@
 	<string>Main</string>
 	<key>NSPrincipalClass</key>
 	<string>NSApplication</string>
-	<key>SUFeedURL</key>
-	<string>https://knuffapp.github.io/sparkle.xml</string>
-	<key>SUPublicDSAKeyFile</key>
-	<string>dsa_pub.pem</string>
 	<key>UTExportedTypeDeclarations</key>
 	<array>
 		<dict>
@@ -78,14 +60,14 @@
 			<array>
 				<string>public.item</string>
 				<string>public.data</string>
-				<string>com.madebybowtie.knuff.document</string>
+				<string>org.sdkdimon.knuff.document</string>
 			</array>
 			<key>UTTypeDescription</key>
 			<string>Knuff Document</string>
 			<key>UTTypeIconFile</key>
 			<string>DocumentIcon</string>
 			<key>UTTypeIdentifier</key>
-			<string>com.madebybowtie.Knuff-OSX.document</string>
+			<string>org.sdkdimon.Knuff-OSX.document</string>
 			<key>UTTypeTagSpecification</key>
 			<dict>
 				<key>public.filename-extension</key>

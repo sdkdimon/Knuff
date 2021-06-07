@@ -9,7 +9,6 @@
 #import "APNSDocument.h"
 #import "APNSViewController.h"
 #import "APNSItem.h"
-#import <Fragaria/Fragaria.h>
 
 @interface APNSDocument ()
 @property (nonatomic, strong) APNSItem *item;

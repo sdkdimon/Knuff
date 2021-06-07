@@ -25,9 +25,8 @@
 #import "FBKVOController.h"
 
 #import <pop/POP.h>
-#import <Fragaria/Fragaria.h>
 
-@interface APNSViewController () <MGSFragariaTextViewDelegate, MGSDragOperationDelegate, APNSDevicesViewControllerDelegate, NSPopoverDelegate, NSTextViewDelegate, SBAPNSDelegate>
+@interface APNSViewController () <APNSDevicesViewControllerDelegate, NSPopoverDelegate, NSTextViewDelegate, SBAPNSDelegate>
 @property (nonatomic, strong) FBKVOController *KVOController;
 
 @property (nonatomic, strong) SBAPNS *APNS;
@@ -48,7 +47,7 @@
 
 @property (nonatomic, strong, readonly) NSDictionary *payload;
 
-@property (weak) IBOutlet MGSFragariaView *fragariaView;
+@property (weak) IBOutlet NSTextView *fragariaView;
 
 @property (nonatomic, strong) NSPopover *devicesPopover;
 
@@ -100,7 +99,7 @@
   [self.payloadTypePopUpButton removeAllItems];
   [self.payloadTypePopUpButton addItemsWithTitles:APNSItemPushTypesAll()];
   
-  [[MGSUserDefaultsController sharedController] addFragariaToManagedSet:self.fragariaView];
+//  [[MGSUserDefaultsController sharedController] addFragariaToManagedSet:self.fragariaView];
 }
 
 #pragma mark -
@@ -239,7 +238,7 @@
     
     [self.APNS pushPayload:self.payload
                    toToken:[self preparedToken]
-                 withTopic:@"com.madebybowtie.Knuff-iOS"
+                 withTopic:@"org.sdkdimon.Knuff-iOS"
                   priority:self.document.priority
                 collapseID:self.document.collapseID
                payloadType:APNSItemPushTypeFromStr(self.payloadTypePopUpButton.selectedItem.title)
@@ -521,14 +520,14 @@
   
   [self setShowSandbox:NO animated:NO];
   
-  self.fragariaView.syntaxColoured = YES;
-  self.fragariaView.showsLineNumbers = YES;
-  self.fragariaView.syntaxDefinitionName = @"JavaScript";
-  self.fragariaView.textViewDelegate = self;
+//  self.fragariaView.syntaxColoured = YES;
+//  self.fragariaView.showsLineNumbers = YES;
+//  self.fragariaView.syntaxDefinitionName = @"JavaScript";
+//  self.fragariaView.textViewDelegate = self;
   
   [self.fragariaView setString:representedObject.payload];
 
-  [representedObject setUndoManager:[self.fragariaView.textView undoManager]];
+  [representedObject setUndoManager:[self.fragariaView undoManager]];
 }
 
 #pragma mark -
